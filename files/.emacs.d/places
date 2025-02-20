@@ -1,0 +1,7 @@
+;;; -*- coding: utf-8; mode: lisp-data -*-
+(("/home/josh/homefiles/config/home-config.scm" . 843)
+ ("/home/josh/homefiles/config/systems/base-system.scm" . 716)
+ ("/etc/config.scm" . 2373)
+ ("/home/josh/.bash_profile" . 204)
+ ("/home/josh/scripts/keyboardfix.sh" . 79)
+ ("/home/josh/.emacs.d/init.el" . 1259))

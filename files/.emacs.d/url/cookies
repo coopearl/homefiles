@@ -1,0 +1,18 @@
+;; Emacs-W3 HTTP cookies file
+;; Automatically generated file!!! DO NOT EDIT!!!
+
+(setq url-cookie-storage
+ 'nil)
+(setq url-cookie-secure-storage
+ '(("reddit.com"
+  [url-cookie "edgebucket" "MRoIAKGW58msiUgnc8" "Fri Feb 19 00:41:43 2027 GMT" "/" "reddit.com" t]
+  [url-cookie "token_v2" "eyJhbGciOiJSUzI1NiIsImtpZCI6IlNIQTI1NjpzS3dsMnlsV0VtMjVmcXhwTU40cWY4MXE2OWFFdWFyMnpLMUdhVGxjdWNZIiwidHlwIjoiSldUIn0.eyJzdWIiOiJsb2lkIiwiZXhwIjoxNzQwMDEyMTA0Ljk5MTEwOSwiaWF0IjoxNzM5OTI1NzA0Ljk5MTEwOSwianRpIjoiQU9LR3U2RzdWcF9jbGNTUzJhVy1lcXFla1k3Z1ZBIiwiY2lkIjoiMFItV0FNaHVvby1NeVEiLCJsaWQiOiJ0Ml8xamthNDZseXBqIiwibGNhIjoxNzM5OTI1NzA0OTkwLCJzY3AiOiJlSnhra2RHT3REQUloZC1GYTVfZ2Y1VV9tMDF0Y1lhc0xRYW9rM243RFZvY2s3MDdjRDRwSFA5REtvcUZEQ1pYZ3FuQUJGZ1RyVERCUnVUOW5MbTNnMmlOZTh0WXNabkNCRm13RkRya21MR3NpUVFtZUpJYXl4c21vSUxOeUZ5dXRHTk5MVDBRSnFoY01yZUZIcGMyb2JrYmk1NmRHRlc1ckR5b3NWZmwwdGpHRkxZbnhqY2JxdzJwdUM2bk1rbkxRdmtzWHZUak45VzM5dm16X1NhMEo4T0txdW1CM2hsSkNHNHNmcGltM2Q5VGs1NnRDeGExOTNxUTJ1ZDYzSzU5MWl3ME83ZWY2X2xySXhtWFkyaC1KdnQzMXktaEE0ODhMelBxQUVhczRVY1pkbVFkX2xVSFVMbWdKR01KNHRNSTVNcmwyMzhKdG12VHY4YnRFejk4TS1LbU5feldETlJ6Q2VMUXBfSDFHd0FBX184UTFlVFIiLCJmbG8iOjF9.B8dygGDupCnRTSGfir6a5gR_dTFdAzT2LxOnIxqenRHrQEBXrOnZqNLjkHzdZVOHpdheSB244XfWxZfZ6JcMApz5X5CTcL3SOQL63BdgWkUFP6N34tLlKTtXyubQj-tx4FqoQy8j1Nu6PCmZFDsFoMmP8WKzWpfqrocZhvH7KdytchVR9LbZUnjdUAx4YRlrusMIIGQNCtEwQmakQRq-BONbFYT3of5x0wj7HESW_Nc-XrepDH1RRBXMjfATHOfusKQaZp0dLk2o3ywg0bg9hCXsxbT9uyhCTm2-ig8A7MZ5abZ3w_Fo5zc6sTYnAeMcpm3FqFa-KkBcXb3_ZyW_Ww" "Thu, 20 Feb 2025 00:41:44 GMT" "/" "reddit.com" t])
+ (".reddit.com"
+  [url-cookie "loid" "000000001jka46lypj.2.1739925704990.Z0FBQUFBQm50U2pJN0dPSXlZWlMxT01XQ1lIRTNSWWQ0cEtUYkxWTkx4WDZodFRGVUdrOU9ZLTM0QThvS1Z6c1A5ZnotSm5wYks5aFpKUTg3RmFWVXlNODlkdzRjbFpZeVJCUks4cXlQOS1CRHZQMjNNS1AwUmhyQ2tMdHFrT1haZ0EwbEVKdC1fMWg" "Fri, 19 Feb 2027 00:41:45 GMT" "/" ".reddit.com" t]
+  [url-cookie "csv" "2" "Fri Feb 19 00:41:45 2027 GMT" "/" ".reddit.com" t]))
+)
+
+;; Local Variables:
+;; version-control: never
+;; no-byte-compile: t
+;; End:

@@ -1,0 +1,53 @@
+(define-module (config home-config)
+  #:use-module (gnu)
+  #:use-module (gnu home)
+  #:use-module (gnu home services shells)
+  #:use-module (gnu home services dotfiles)  
+  #:use-module (gnu services)
+  #:use-module (gnu packages wm)
+  #:use-module (gnu packages lisp)
+  #:use-module (gnu packages wm)
+  #:use-module (gnu packages version-control)
+  #:use-module (gnu packages admin)
+  #:use-module (gnu packages emacs)
+  #:use-module (gnu packages emacs-xyz)
+  #:use-module (gnu packages certs)
+;;  #:use-module (gnu packages wm)
+;;  #:use-module (gnu packages wm)
+;;  #:use-module (gnu packages wm)
+;;  #:use-module (gnu packages wm)
+  #:use-module (gnu packages aspell)
+  #:use-module (gnu packages terminals)
+  #:use-module (gnu packages xdisorg)
+  #:use-module (gnu packages xorg)
+  #:use-module (guix gexp))
+(home-environment
+
+ (packages (append (list git
+		  fastfetch
+		  emacs-guix
+		  aspell
+		  aspell-dict-en
+		  alacritty
+		  xcape
+		  setxkbmap
+		  emacs
+		  emacs-exwm
+		  emacs-vertico
+		  emacs-marginalia
+		  emacs-avy
+		  emacs-vterm
+		  emacs-desktop-environment
+		  nss-certs
+		  stumpwm
+		  sbcl
+		  )))
+ 
+ (services (list (service home-bash-service-type
+			  (home-bash-configuration
+			   (environment-variables '(("PS1" . "\\[\\e[1;32m\\]\\u \\[\\e[1;34m\\]\\w \\[\\e[0m\\]λ ")))
+			   (aliases '(("ff" . "fastfetch")
+				      ("kb" . "bash ~/scripts/keyboardfix.sh")))))
+		 (service home-dotfiles-service-type
+			  (home-dotfiles-configuration
+			   (directories '("../files")))))))

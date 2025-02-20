@@ -1,0 +1,28 @@
+HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Age: 3407295
+Cache-Control: public, max-age=0, must-revalidate
+Content-Disposition: inline; filename="favicon.svg"
+Content-Type: image/svg+xml
+Date: Wed, 19 Feb 2025 06:25:38 GMT
+Etag: W/"bdcc5a6b18a6a8565e6af250da42881918a6efb71ff497f1e3a255ba7b384067"
+Last-Modified: Fri, 10 Jan 2025 19:57:22 GMT
+Server: Vercel
+Strict-Transport-Security: max-age=63072000
+X-Vercel-Cache: HIT
+X-Vercel-Id: pdx1::z5ncj-1739946338294-5220eb78df84
+Transfer-Encoding: chunked
+
+<svg width="144" height="144" viewBox="0 0 144 144" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="72" cy="72" r="72" fill="#7134A9"/>
+<g clip-path="url(#clip0_6_98)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M53.8867 125.6C72.7593 125.287 72.5281 116.638 72.6653 106.49C58.5 106 46.3884 107.592 44 92.5C41.6355 77.558 66.2305 72.7164 68.2036 72.6578C44.7667 53.6526 39.9288 41.2439 69.7992 42.2187C87.576 20.1228 58.267 15.8729 50.8825 24.8362C93.2295 32.1609 39.6056 30.7971 36.143 39.7093C35.2705 56.0777 49.2615 64.1008 55.0197 68.7683C14.5 79 33.4283 115.062 57.1849 115.062C63.8739 115.062 60.4879 121.703 53.8867 125.6Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M89.8396 125.6C70.967 125.287 71.1982 116.638 71.061 106.49C85.2263 106 97.3379 107.592 99.7263 92.5C102.091 77.558 77.4959 72.7164 75.5227 72.6578C98.9596 53.6526 103.797 41.2439 73.9271 42.2187C56.1503 20.1228 85.4593 15.8729 92.8438 24.8362C50.4968 32.1609 104.121 30.7971 107.583 39.7093C108.456 56.0777 94.4648 64.1008 88.7066 68.7683C129.226 79 110.298 115.062 86.5415 115.062C79.8524 115.062 83.2384 121.703 89.8396 125.6Z" fill="white"/>
+<path d="M75.4608 57.5074C74.8863 55.5816 68.7251 55.4152 68.1009 57.5074C67.4375 59.7311 70.2037 63.9266 71.7809 63.9266C73.358 63.9266 76.0353 59.4332 75.4608 57.5074Z" fill="white" stroke="white"/>
+</g>
+<defs>
+<clipPath id="clip0_6_98">
+<rect width="82" height="108" fill="white" transform="translate(31 18)"/>
+</clipPath>
+</defs>
+</svg>
