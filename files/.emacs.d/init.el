@@ -5,13 +5,11 @@
 	("MELPA"        . "https://melpa.org/packages/")
 	("ORG"          . "https://orgmode.org/elpa/")
 	("MELPA Stable" . "https://stable.melpa.org/packages/")
-	("nongnu"       . "https://elpa.nongnu.org/nongnu/"))
       package-archive-prioritites
       '(("GNU ELPA"     . 20)
 	("MELPA"        . 15)
 	("ORG"          . 10)
-	("MELPA Stable" . 5)
-	("nongnu"       . 0)))
+	("MELPA Stable" . 5))))
 (package-initialize)
 
 ;; vertico and marginalia
