@@ -15,93 +15,12 @@
 ;; vertico and marginalia
 (vertico-mode +1)
 (marginalia-mode +1)
+
 ;;avy
 (global-set-key (kbd "M-j") 'avy-goto-char-timer)
 
 ;;cookies in EWW
 (setq url-cookie-untrusted-urls '(".*"))
-
-;;EXWM
-
-  (defun exwm-update-class ()
-                          (exwm-workspace-rename-buffer exwm-class-name))
-
-(when (display-graphic-p)
-
-                                  (setq exwm-workspace-number 1)
-
-                                  (add-hook 'exwm-update-class-hook 'exwm-update-class)
-
-                                  (add-hook 'exwm-update-title-hook 'exwm-update-title)
-
-                                  ;; These keys should always pass through to Emacs
-                                  (setq exwm-input-prefix-keys
-                                    '(?\C-x
-                                      ?\C-u
-                                      ?\C-h
-                                      ?\M-x
-                                      ?\M-`
-                                      ?\M-&
-                                      ?\M-:
-                                      ?\C-\M-j  ;; Buffer list
-                                      ?\C-\ ))  ;; Ctrl+Space
-
-                                  ;; Ctrl+Q will enable the next key to be sent directly
-                                  (define-key exwm-mode-map [?\C-q] 'exwm-input-send-next-key)
-
-                                  ;; Set up global key bindings.  These always work, no matter the input state!
-                                  ;; Keep in mind that changing this list after EXWM initializes has no effect.
-                                  (setq exwm-input-global-keys
-                                        `(
-                                          ;; Reset to line-mode (C-c C-k switches to char-mode via exwm-input-release-keyboard)
-                                          ([?\s-r] . exwm-reset)
-
-                                          ;; Move between windows
-                                          ([?\s-b] . windmove-left)
-                                          ([?\s-f] . windmove-right)
-                                          ([?\s-p] . windmove-up)
-                                          ([?\s-n] . windmove-down)
-
-                                          ;; Launch applications via shell command
-                                          ([?\s-d] . (lambda (command)
-                                                       (interactive (list (read-shell-command "$ ")))
-                                                       (start-process-shell-command command nil command)))
-
-                                          ;; Switch workspace
-                                          ([?\s-w] . exwm-workspace-switch)
-
-                                          ;; 's-N': Switch to certain workspace with Super (Win) plus a number key (0 - 9)
-                                          ,@(mapcar (lambda (i)
-                                                      `(,(kbd (format "s-%d" i)) .
-                                                        (lambda ()
-                                                          (interactive)
-                                                          (exwm-workspace-switch-create ,i))))
-                                                    (number-sequence 0 9))
-                                        ))
-                                  (setq exwm-input-simulation-keys
-                                        '(
-                                          ([?\C-b] . [left])
-                                          ([?\M-b] . [C-left])
-                                          ([?\C-f] . [right])
-                                          ([?\M-f] . [C-right])
-                                          ([?\C-p] . [up])
-                                          ([?\C-n] . [down])
-                                          ([?\C-a] . [home])
-                                          ([?\C-e] . [end])
-                                          ([?\M-v] . [prior])
-                                          ([?\C-v] . [next])
-                                          ([?\C-d] . [delete])
-                                          ([?\M-d] . [S-end delete])
-                                          ([?\C-k] . [S-end delete])
-                                          ([?\C-w] . [?\C-x])
-                                          ([?\M-w] . [?\C-c])
-                                          ([?\C-y] . [?\C-v])
-                                          ([?\C-/] . [?\C-z])
-                                          ([?\C-g] . [?\C-c])))
-
-                                  (exwm-enable))
-
-
 
 ;;custom variables
 (setq custom-file (locate-user-emacs-file "custom-vars.el"))

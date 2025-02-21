@@ -4,7 +4,7 @@
   #:use-module (gnu packages bash)  
   #:export (base-system))
 
-(use-service-modules cups desktop networking ssh xorg)
+(use-service-modules cups desktop networking)
 
 (define base-system
   (operating-system
@@ -24,8 +24,11 @@
    (packages (append (list bash)
                      %base-packages))
 
-   (services
-    %desktop-services)
+   (services (remove (lambda (service)
+		       (eq? (service-kind service) gdm-service-type))
+		     %desktop-services))
+
+
    (bootloader (bootloader-configuration
 		(bootloader grub-bootloader)
 		(targets (list "/dev/nvme0n1"))
@@ -58,5 +61,4 @@
                          (type "ext4")
                          (dependencies mapped-devices)) %base-file-systems))))
 
-(operating-system
- (inherit base-system))
+
