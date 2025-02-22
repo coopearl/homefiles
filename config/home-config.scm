@@ -5,8 +5,6 @@
   #:use-module (gnu home services dotfiles)
   #:use-module (gnu home services desktop)
   #:use-module (gnu services)
-;;  #:use-module (dwl-guile home-service)
-;;  #:use-module (dwl-guile patches)  
   #:use-module (guix gexp)
   #:use-module (srfi srfi-1))
 
@@ -49,11 +47,4 @@
 				      ("kb" . "bash ~/scripts/keyboardfix.sh")))))
 		 (service home-dotfiles-service-type
 			  (home-dotfiles-configuration
-			   (directories '("../files"))))
-;;		 (service home-dwl-guile-service-type
-;;			  (home-dwl-guile-configuration
-;;			   (auto-start? #t)
-;;			   (reload-config-on-change? #t))))))
-
-
-
+			   (directories '("../files")))))))
