@@ -35,6 +35,7 @@
 		  emacs
 		  emacs-vterm
 		  nss-certs
+		  sudo
 		  sway
                   swaybg
                   swayidle
