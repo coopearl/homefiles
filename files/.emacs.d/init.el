@@ -12,13 +12,6 @@
 	("MELPA Stable" . 5))))
 (package-initialize)
 
-;; vertico and marginalia
-(vertico-mode +1)
-(marginalia-mode +1)
-
-;;avy
-(global-set-key (kbd "M-j") 'avy-goto-char-timer)
-
 ;;cookies in EWW
 (setq url-cookie-untrusted-urls '(".*"))
 
@@ -36,10 +29,7 @@
 (setq use-file-dialog nil use-dialog-box nil)
 
 ;;theme
-(when (display-graphic-p)
-  (load-theme 'catppuccin :no-confirm)
-  (setq catppuccin-flavor 'frappe)
-  (catppuccin-reload))
+(load-theme 'modus-vivendi :no-confirm)
 
 ;;scrollin
 (setq scroll-conservatively 100000)

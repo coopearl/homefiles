@@ -5,8 +5,8 @@
   #:use-module (gnu home services dotfiles)
   #:use-module (gnu home services desktop)
   #:use-module (gnu services)
-  #:use-module (dwl-guile home-service)
-  #:use-module (dwl-guile patches)  
+;;  #:use-module (dwl-guile home-service)
+;;  #:use-module (dwl-guile patches)  
   #:use-module (guix gexp)
   #:use-module (srfi srfi-1))
 
@@ -30,17 +30,15 @@
 
  (packages (cons* git
 		  fastfetch
-		  emacs-guix
 		  aspell
 		  aspell-dict-en
-		  alacritty
 		  emacs
-		  emacs-vertico
-		  emacs-marginalia
-		  emacs-avy
 		  emacs-vterm
-		  nyxt
 		  nss-certs
+		  sway
+                  swaybg
+                  swayidle
+                  swaylock
 		  %base-packages))
  
  (services (list (service home-bash-service-type
@@ -51,8 +49,10 @@
 		 (service home-dotfiles-service-type
 			  (home-dotfiles-configuration
 			   (directories '("../files"))))
-		 (service home-dwl-guile-service-type
-			  (home-dwl-guile-configuration
-			   (auto-start? #t)
-			   (reload-config-on-change? #t))))))
+;;		 (service home-dwl-guile-service-type
+;;			  (home-dwl-guile-configuration
+;;			   (auto-start? #t)
+;;			   (reload-config-on-change? #t))))))
+
+
 
